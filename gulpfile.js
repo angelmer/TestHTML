@@ -14,7 +14,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 
 gulp.task("less", function () {
-    return gulp.src("app/less/style.less")
+    return gulp.src("app/less/**/*.less")
         .pipe(plumber())
         .pipe(less())
         .pipe(postcss([
@@ -24,7 +24,7 @@ gulp.task("less", function () {
         .pipe(minify())
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest("app/css"))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task("webp", function(){
