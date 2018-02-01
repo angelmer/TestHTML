@@ -1,0 +1,11 @@
+.main-content {
+  outline: 1px solid green;
+}
+.main-content__title {
+  font-size: 64px;
+  line-height: 64px;
+  margin: 0;
+}
+.main-menu__link {
+  text-decoration: none;
+}

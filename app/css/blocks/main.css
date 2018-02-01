@@ -1,0 +1,13 @@
+.main {
+  outline: 1px solid blue;
+}
+.main__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main__worth-link {
+  font-size: 23px;
+  line-height: 30px;
+  text-decoration: none;
+}

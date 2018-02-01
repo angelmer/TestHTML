@@ -1,0 +1,7 @@
+.product {
+  outline: 1px solid crimson;
+}
+.product__title {
+  font-size: 26px;
+  line-height: 28px;
+}

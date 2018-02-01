@@ -1,0 +1,13 @@
+.recomendation {
+  outline: 1px solid brown;
+}
+.recomendation__title {
+  font-size: 20px;
+  line-height: 22px;
+}
+.recomendation__item {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  display: block;
+}
