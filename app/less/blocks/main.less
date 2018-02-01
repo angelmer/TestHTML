@@ -1,25 +1,42 @@
-.main {
-  outline: 1px solid blue;
-}
-
 .main__top {
   display: flex;
+  align-items: flex-end;
   background-color: @white;
 }
 
 .main__worth-link {
-  font-size: 23px;
-  line-height: 30px;
+  display: block;
+  margin: 0 0 32px 288px;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
   color: @orange;
+  border-bottom: 1px solid @orange;
+}
+
+.main__worth-link:first-letter {
+  font-size: 23px;
+}
+
+.main__schedule {
+  margin: 0 0 30px 72px;
 }
 
 .main__schedule-time {
+  margin-left: 69px;
   font-size: 16px;
   line-height: 18px;
 }
 
 .main__schedule-phone {
+  margin: 3px 0 0 0;
   font-size: 31px;
   line-height: 32px;
   color: @phone-gray;
+}
+
+.main__logo-image {
+  margin: -4px 0 0 25px;
 }

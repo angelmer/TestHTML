@@ -1,10 +1,11 @@
 .main-content {
-  outline: 1px solid green;
+  padding-top: 42px;
 }
 
 .main-content__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .main-content__item:nth-child(n+2) {
@@ -15,11 +16,15 @@
   margin: 0;
   font-size: 64px;
   line-height: 64px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
   color: @dark-gray;
 }
 
 .main-content__description {
+  margin: 9px 0 33px 0;
   font-size: 26px;
   line-height: 28px;
+  letter-spacing: 0.02em;
   color: @dark-gray;
 }

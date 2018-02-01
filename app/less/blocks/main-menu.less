@@ -3,16 +3,44 @@
   margin: 0;
   padding: 0;
   background-color: @white;
-  outline: 1px solid pink;
 }
 
 .main-menu__item {
+  display: block;
+  padding: 16px 0 18px 0;
+  text-align: center;
   list-style: none;
+  border-right: 1px solid @dark-gray;
+}
+
+.main-menu__item:first-child {
+  padding-left: 50px;
+  padding-right: 58px;
+}
+
+.main-menu__item:nth-child(2) {
+  padding-left: 75px;
+  padding-right: 89px;
+}
+
+.main-menu__item:nth-child(3) {
+  padding-left: 23px;
+  padding-right: 21px;
+}
+
+.main-menu__item:nth-child(4) {
+  padding-left: 67px;
+  padding-right: 79px;
+}
+
+.main-menu__item:last-child {
+  padding-left: 51px;
+  border-right: none;
 }
 
 .main-menu__link {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 24px;
+  line-height: 24px;
   text-decoration: none;
   color: @gray-menu;
 }

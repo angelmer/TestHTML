@@ -1,14 +1,30 @@
 .product {
+  padding: 26px 0 0 23px;
   width: 878px;
   background-color: @white;
   border-radius: 5px;
 }
 
 .product__title {
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 26px;
   line-height: 28px;
+  font-weight: normal;
   color: @dark-gray;
+}
+
+.product__wrapper {
+  display: flex;
+}
+
+.product__image {
+  margin: 0 0 0 57px;
+  padding: 12px 0 0 0;
+}
+
+.product__description {
+  width: 475px;
+  margin: 0 0 0 82px;
 }
 
 .product__name {
@@ -18,7 +34,93 @@
 }
 
 .product__description-item {
+  position: relative;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  list-style: none;
   color: @dark-gray;
+}
+
+.product__description-item::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 6px;
+  left: -17px;
+  border-radius: 50%;
+  background-color: @orange;
+}
+
+.product__color {
+  padding: 6px 0 0 19px;
+
+  input {
+    display: none;
+  }
+}
+
+.product__color-choose {
+  padding-top: 90px;
+}
+
+.product__color-label{
+  position: relative;
+}
+
+.product__color-label::before {
+  content: "";
+  position: absolute;
+  top: -88px;
+  width: 62px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+.product__color-input:checked +.product__color-label::after {
+  content: "";
+  position: absolute;
+  top: -76px;
+  left: 17px;
+  z-index: 1000;
+  width: 32px;
+  height: 27px;
+  background-image: url("../img/checked.png");
+  background-color: white;
+}
+
+.product__color-label:nth-child(1)::before{
+  background: url("../img/colors.jpg") no-repeat;
+}
+
+.product__color-label:nth-child(2)::before{
+  left: 69px;
+  background: url("../img/colors.jpg") no-repeat -70px 0;
+}
+
+.product__color-label:nth-child(3)::before{
+  left: 137px;
+  background: url("../img/colors.jpg") no-repeat -137px 0;
+}
+
+.product__color-label:nth-child(4)::before{
+  left: 206px;
+  background: url("../img/colors.jpg") no-repeat -207px 0;
+}
+
+.product__color-label:nth-child(5)::before{
+  left: 274px;
+  background: url("../img/colors.jpg") no-repeat -274px 0;
+}
+
+.product__color-label:nth-child(6)::before{
+  left: 343px;
+  background: url("../img/colors.jpg") no-repeat -343px 0;
+}
+
+.product__color-label:nth-child(7)::before{
+  left: 411px;
+  background: url("../img/colors.jpg") no-repeat -411px 0;
 }
 
 .product__color-title {
