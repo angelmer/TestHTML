@@ -1,16 +1,98 @@
 .useful-information {
   width: 878px;
+  padding: 25px 0 35px 0;
+}
+
+.useful-information__wrapper {
+  padding: 32px 0 53px 25px;
   background-color: @white;
   border-radius: 5px;
 }
 
 .useful-information__title {
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 26px;
   line-height: 28px;
+  font-weight: normal;
   color: @dark-gray;
 }
 
-.useful-information__content {
+.useful-information__what-for {
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 0 60px 0 90px;
   color: @dark-gray;
+}
+
+.useful-information__what-for:nth-child(3) {
+  margin-bottom: 35px;
+}
+
+.useful-information__what-for::before {
+  content: "";
+  position: absolute;
+  width: 57px;
+  height: 57px;
+}
+
+.useful-information__what-for:nth-child(2)::before {
+  top: -2px;
+  left: 0;
+  background: url("../img/layers.svg")no-repeat;
+}
+
+.useful-information__what-for:nth-child(3)::before {
+  top: 4px;
+  left: 0;
+  background: url("../img/tree.svg")no-repeat;
+}
+
+.useful-information__how-use {
+  position: relative;
+  margin: 10px 0 0 0;
+  padding: 0 40px 0 50px;
+  color: @dark-gray;
+}
+
+.useful-information__how-use::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid @black;
+  border-radius: 50%;
+}
+
+.useful-information__how-use:nth-child(5)::before {
+  top: -2px;
+}
+
+.useful-information__how-use:nth-child(6)::before {
+  top: 8px;
+}
+
+.useful-information__how-use:nth-child(7)::before {
+  top: 2px;
+}
+
+.useful-information__how-use::after{
+  position: absolute;
+  left: 13px;
+  font-size: 20px;
+}
+
+.useful-information__how-use:nth-child(5)::after {
+  content: "1";
+  top: 7px;
+}
+
+.useful-information__how-use:nth-child(6)::after {
+  content: "2";
+  top: 17px;
+}
+
+.useful-information__how-use:nth-child(7)::after {
+  content: "3";
+  top: 10px;
 }

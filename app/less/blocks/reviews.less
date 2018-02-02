@@ -3,23 +3,34 @@
 }
 
 .reviews__title {
-  margin: 0;
+  display: inline-block;
+  margin: 0 0 19px 0;
   font-size: 26px;
   line-height: 28px;
+  font-weight: normal;
   color: @dark-gray;
 }
 
 .reviews__wrapper {
+  padding: 0 0 45px 0;
   background-color: @white;
 }
 
 .reviews__link {
+  margin: 0 0 0 230px;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
   color: @orange;
+  border-bottom: 1px solid @orange;
+}
+
+.reviews__content {
+  padding: 20px 0 43px 24px;
 }
 
 .reviews__author {
+  margin: 15px 0 3px 0;
   font-size: 16px;
   line-height: 18px;
   color: @dark-gray;
@@ -30,19 +41,45 @@
 }
 
 .reviews__author-data {
+  display: block;
   color: @light-grey;
 }
 
+.reviews__rating {
+  width: 75px;
+  height: 13px;
+  margin: 10px 0 0 0;
+  background: url("../img/stars.svg")no-repeat;
+}
+
 .reviews__part {
+  padding: 0 40px 3px 0;
   color: @dark-gray;
 }
 
 .reviews__more {
+  position: relative;
+  margin: 0 0 0 20px;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px dashed @orange;
   color: @orange;
 }
 
+.reviews__more::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  width: 13px;
+  height: 13px;
+  background: url("../img/arrow-circle.png");
+  border-radius: 50%;
+}
+
 .reviews__button {
+  margin: 0 0 0 26px;
+  padding: 11px 23px 11px 23px;
   font-size: 16px;
 }
