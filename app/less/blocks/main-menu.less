@@ -1,5 +1,6 @@
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   background-color: @white;
@@ -14,27 +15,23 @@
 }
 
 .main-menu__item:first-child {
-  padding-left: 50px;
-  padding-right: 58px;
+  flex-grow: 1;
 }
 
 .main-menu__item:nth-child(2) {
-  padding-left: 75px;
-  padding-right: 89px;
+  flex-grow: 1;
 }
 
 .main-menu__item:nth-child(3) {
-  padding-left: 23px;
-  padding-right: 21px;
+  flex-grow: 1;
 }
 
 .main-menu__item:nth-child(4) {
-  padding-left: 67px;
-  padding-right: 79px;
+  flex-grow: 1;
 }
 
 .main-menu__item:last-child {
-  padding-left: 51px;
+  flex-grow: 1;
   border-right: none;
 }
 
@@ -43,4 +40,8 @@
   line-height: 24px;
   text-decoration: none;
   color: @gray-menu;
+}
+
+.main-menu__item:hover{
+  background: @menu-hover;
 }

@@ -1,0 +1,67 @@
+.modal__calculate {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  background: @white;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.modal__calculate-name {
+  margin-bottom: 0;
+}
+
+.modal__calculate-size {
+  display: block;
+}
+
+.modal__calculate-phone {
+  display: block;
+}
+
+.modal__close {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 20px;
+  height: 35px;
+  background: @white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal__close::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 10px;
+  height: 1px;
+  transform: rotate(45deg);
+  background: @black;
+}
+
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 10px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background: @black;
+}
+
+.modal__button {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px 0 0 40px;
+}
+
+.modal__calculate--open {
+  display: block;
+}
